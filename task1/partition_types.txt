@@ -14,7 +14,7 @@
 0Dh 	Зарезервирован
 0Eh 	FAT-16X (FAT-16 с использованием LBA) (VFAT)
 0Fh 	Расширенный раздел LBA 
-10h 	OPUS
+10h     OPUS
 11h 	Скрытый FAT 
 12h 	Compaq, Сервисный раздел
 14h 	Скрытый FAT 
@@ -64,7 +64,12 @@
 61h 	SpeedStor
 62h 	GNU HURD
 63h 	UNIX
-64h — 69h 	NetWare
+64h	NetWare
+65h 	NetWare
+66h	NetWare
+67h	NetWare
+68h	NetWare
+69h 	NetWare
 77h 	VNDI, M2FS, M2CS
 78h 	XOSL
 7Fh 	Данный код зарезервирован для исследовательских или учебных проектов
