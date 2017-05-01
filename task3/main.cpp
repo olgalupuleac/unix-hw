@@ -14,7 +14,7 @@ int main(){
     is >> freq;
     string commands;
     while(! is.eof()){
-	    char c = is.get();
+		char c = is.get();
         if(! is.eof())
             commands += c;
     }
