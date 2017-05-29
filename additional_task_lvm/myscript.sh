@@ -30,7 +30,7 @@ lvcreate --size 1G -n ltmp myvg
 home_size=$(du -hs /home | awk '{print $1}' |  grep -Eo "[^A-Za-z]*" | sed -e 's/,/\./')
 home_unit=$(du -hs /home | awk '{print $1}' |  grep -Eo "[A-Za-z]*")
 lhome_size=$(bc <<< "scale=1;3*$home_size/2")
-echo $lhome_size
+#echo $lhome_size
 lvcreate --size "$lhome_size$home_unit" -n lhome myvg
 mkfs.ext4 /dev/mapper/myvg-ltmp
 mkfs.ext4 /dev/mapper/myvg-lhome
